@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Producto</title>
+</head>
+
+<body>
+    <center>
+        <h1>Registrar Producto</h1>
+        <form action="insert.html" name="REG" method="get">
+            <table border="0">
+                <tr>
+                    <td align="right">Código:</td>
+                    <td><input type="text" name="codigo" id="codigo" value="" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Nombres:</td>
+                    <td><input type="text" name="nombres" id="nombres" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Apellidos:</td>
+                    <td><input type="text" name="apellidos" id="apellidos" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Sexo:</td>
+                    <td>
+                        <input type="radio" name="sexo" id="sexo" value="1" checked>Femenino
+                        <input type="radio" name="sexo" id="sexo" value="2">Masculino
+                        <input type="radio" name="sexo" id="sexo" value="3">Otro
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Móvil:</td>
+                    <td><input type="number" name="movil" id="movil"></td>
+                </tr>
+                <tr>
+                    <td align="right">Fecha Nacimiento:</td>
+                    <td><input type="date" name="fechanac" id="fechanac"></td>
+                </tr>
+                <tr>
+                    <td align="right">Curso:</td>
+                    <td>
+                        <select name="curso" id="curso">
+                            <option value="1">Ingeniería de Sistemas</option>
+                            <option value="2" selected>Contaduría Pública</option>
+                            <option value="3">Ingeniería Civil</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Hobbies</td>
+                    <td>
+                        <input type="checkbox" name="hobDep" id="hobDep" value="1">Deportes
+                        <input type="checkbox" name="hobCine" id="hobCine" value="1">Cine
+                        <input type="checkbox" name="hobMusica" id="hobMusica" value="1">Música
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Contraseña:</td>
+                    <td><input type="password" name="clave" id="clave"></td>
+                </tr>
+                <tr>
+                    <td align="right">Correo:</td>
+                    <td><input type="email" name="correo" id="correo"></td>
+                </tr>
+                <tr>
+                    <td align="right">Observaciones:</td>
+                    <td><textarea name="observa" id="observa" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Guardar"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
